@@ -6,6 +6,7 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 timeZone = "Europe/Berlin"
 theme = "gallery"
+timeout = 120
 
 [params]
   title = "My Gallery"
