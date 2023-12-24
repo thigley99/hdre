@@ -1,0 +1,40 @@
+title = "Higleys Drone Solutions"
+languageCode = "en-us"
+copyright = "© Higley Drone Solutions"
+disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+timeZone = "Europe/Berlin"
+theme = "gallery"
+
+[params]
+  title = "My Gallery"
+  description = "Example site for hugo-theme-gallery"
+  defaultTheme = "light"
+
+[author]
+  name = "Your Name"
+
+[outputs]
+  page = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+
+[imaging]
+  resampleFilter = "CatmullRom"
+  quality = 75
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.112.0"
+
+[menu]
+[[menu.footer]]
+  name = "GitHub"
+  url = "https://github.com/nicokaiser/hugo-theme-gallery/"
+  weight = 3

@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "../lib/photoswipe/photoswipe.css";
+@import "../lib/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css";
+@import "../lib/flickr-justified-gallery/fjGallery.css";
+
+@font-face {
+  font-family: "InterVariable";
+  font-weight: 100 900;
+  font-display: auto;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("../../fonts/InterVariable.woff2") format("woff2");
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+img.lazyload:not([src]) {
+  visibility: hidden;
+}

@@ -1,0 +1,20 @@
+{{ if .Title }}
+  <div class="mx-auto mb-16 mt-9 max-w-screen-lg px-6 text-center">
+    <h1 class="text-3xl font-semibold md:text-4xl">
+    {{ if and (eq .Type "service-area") (eq .Kind "page") }}
+    Real Estate Photography Services in {{.Title}}, {{.Params.State | default "PA"}}
+    {{else}}
+      {{.Title}}
+    {{end}}
+    </h1>
+    {{ if .Params.Description }}
+      <p class="mt-6 text-neutral-500 dark:text-neutral-400 md:text-lg">{{ .Params.Description }}</p>
+    {{ else if eq .Type "service-area" }}
+    <p class="mt-6 text-neutral-500 dark:text-neutral-400 md:text-lg">
+      Get standout real estate presentations in {{.Title}}, PA with our expert services. We offer video tours, high-quality photos, realtor sign installations, and detailed floor plans. Transform your listings and leave a lasting impression on potential buyers. Explore our services for effective property marketing in {{.Title}}.
+    </p>
+
+    {{end}}
+
+  </div>
+{{ end }}
