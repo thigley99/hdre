@@ -7,4 +7,4 @@ menu:
     weight: 1
 ---
 
-This is a demonstration site for the Hugo Gallery theme.
+coming soon

@@ -6,11 +6,13 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 timeZone = "Europe/Berlin"
 timeout = 120
+paginate = 8
 
 [params]
   title = "My Gallery"
   description = "Example site for hugo-theme-gallery"
   defaultTheme = "light"
+  paginate = 8
 
 [author]
   name = "Your Name"

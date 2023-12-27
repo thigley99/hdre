@@ -6,4 +6,3 @@ menu:
   footer:
     weight: 1
 ---
-test
