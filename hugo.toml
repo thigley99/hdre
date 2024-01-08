@@ -7,7 +7,7 @@ enableRobotsTXT = true
 timeZone = "Europe/Berlin"
 timeout = 120
 paginate = 8
-baseURL = "https;//realestate.higleysdrones.com/"
+baseURL = "https://realestate.higleysdrones.com/"
 
 [params]
   title = "My Gallery"
